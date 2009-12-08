@@ -1,0 +1,4 @@
+alias ctp='cd /Volumes/ThePoint/trunk'
+alias spittle='cd ~/mine/project/ruby/spittle'
+alias pspec='./script/spec -c -fo'
+alias vspec='./script/spec -c -fs'

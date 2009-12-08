@@ -1,0 +1,16 @@
+set foldlevel=99999999
+
+"For screen.vim send block
+"to SendScreen function
+"(eg Scheme interpreter)
+noremap ts :ScreenSend<CR>
+
+noremap tn :tabnext<CR>
+
+let clj_highlight_builtins = 1
+let clj_highlight_contrib = 1
+let clj_paren_rainbow = 1
+
+let clj_want_gorilla = 1
+
+let vimclojure#NailgunClient = "/Users/tylerjennings/mine/src/vimclojure-2.1.2/ng"
