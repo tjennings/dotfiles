@@ -1,7 +1,7 @@
 #Fist, ignore everything
-/*
+*
 #Don't ignore dotfiles
-!/.*
+!.*
 #Manually exclude everything else
 /*.swp
 .Trash
