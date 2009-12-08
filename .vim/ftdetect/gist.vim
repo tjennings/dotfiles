@@ -1,0 +1,3 @@
+" A 'gist' file (downloaded with the ':Gist <gist id>' command will be
+" set to ruby by default...
+au BufNewFile,BufRead gist*   set filetype=ruby
