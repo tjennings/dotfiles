@@ -1,5 +1,6 @@
-(prelude-require-packages '(evil-tabs))
+(prelude-require-packages '(evil-tabs flycheck))
 
+(global-flycheck-mode)
 (evil-mode 1)
 
 (menu-bar-mode -1)
