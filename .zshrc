@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/ltj/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 DEFAULT_USER=ltj
 
@@ -56,6 +56,10 @@ plugins=(git ruby osx )
 # User configuration
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+export PATH="/usr/local/bin:/usr/local/heroku/bin:$PATH"
+
+export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
+export PATH="/usr/local/sbin:$PATH"                           
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
