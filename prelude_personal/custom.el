@@ -14,6 +14,24 @@
 
 (define-key evil-normal-state-map "tt" 'projectile-find-file) ;next tab
 
+;; neotree
+(add-to-list 'load-path "~/.emacs.d/personal/scripts/neotree")
+  (require 'neotree)
+  (global-set-key [f8] 'neotree-toggle)
+(setq neo-smart-open t)
+(setq projectile-switch-project-action 'neotree-projectile-action)
+(add-hook 'neotree-mode-hook
+           (lambda ()
+             (define-key evil-normal-state-local-map (kbd "TAB") 'neotree-enter)
+             (define-key evil-normal-state-local-map (kbd "SPC") 'neotree-enter)
+             (define-key evil-normal-state-local-map (kbd "q") 'neotree-hide)
+             (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)))
+
+;; surround
+(add-to-list 'load-path "~/.emacs.d/personal/scripts")
+(require 'evil-surround)
+(global-evil-surround-mode 1)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
