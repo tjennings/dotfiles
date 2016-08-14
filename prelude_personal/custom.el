@@ -32,6 +32,13 @@
 (require 'evil-surround)
 (global-evil-surround-mode 1)
 
+(global-linum-mode t)
+(global-hl-line-mode 1)
+(set-face-background 'hl-line "#3e4446")
+(set-face-foreground 'highlight nil)
+(setq linum-format "%d ")
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
